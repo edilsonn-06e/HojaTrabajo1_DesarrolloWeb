@@ -6,7 +6,7 @@ Este proyecto corresponde a la segunda fase del desarrollo de la página web sob
 
 ## Sitio web publicado
 
-https://hojatrabajouno.netlify.app/
+https://hojatrabajodos.netlify.app/
 
 ## Tecnologías utilizadas
 
