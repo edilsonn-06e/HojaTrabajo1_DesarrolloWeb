@@ -1,0 +1,415 @@
+/* ================================
+Aca queda lo general xd
+    ================================ */
+
+:root {
+    --verde-oscuro: #0b4f3c;
+    --verde: #168f6a;
+    --verde-claro: #dff4ea;
+    --turquesa: #21b7a8;
+    --turquesa-claro: #dff8f5;
+    --blanco: #ffffff;
+    --gris-claro: #f4f7f6;
+    --gris: #66736f;
+    --texto: #24332f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.7;
+    color:var(--texto);
+    background:var(--gris-claro);
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    color:var(--verde);
+    text-decoration:none;
+    transition:.3s;
+}
+
+a:hover{
+    color:var(--turquesa);
+}
+
+ul,
+ol{
+    padding-left:25px;
+}
+
+hr{
+    display:none;
+}
+
+
+/* ================================
+   encabezado bro
+================================ */
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:70px 8%;
+    color:white;
+    background:
+    linear-gradient(rgba(5,45,35,.70),rgba(5,45,35,.80)),
+    url("./piscinas.jpg") center/cover no-repeat;
+}
+
+header h1{
+    font-size:clamp(2.5rem,6vw,5rem);
+    margin-bottom:20px;
+}
+
+header>p{
+    max-width:700px;
+    margin-bottom:35px;
+    font-size:1.2rem;
+}
+
+header nav{
+    width:min(900px,100%);
+    padding:25px;
+    border:1px solid rgba(255,255,255,.4);
+    background:rgba(255,255,255,.12);
+}
+
+header nav h2{
+    margin-bottom:20px;
+}
+
+header nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    list-style:none;
+    padding:0;
+}
+
+header nav a{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid white;
+    color:white;
+}
+
+header nav a:hover{
+    background:white;
+    color:var(--verde-oscuro);
+}
+
+
+/* ================================
+   MAIN
+================================ */
+
+main{
+    width:min(1180px,92%);
+    margin:auto;
+    padding:60px 0;
+}
+
+section{
+    background:white;
+    padding:40px;
+    margin-bottom:35px;
+}
+
+section h2{
+    color:var(--verde-oscuro);
+    border-bottom:3px solid var(--verde);
+    padding-bottom:10px;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+section h3{
+    color:var(--verde);
+    margin:25px 0 15px;
+}
+
+section p{
+    margin-bottom:15px;
+}
+
+section li{
+    margin-bottom:8px;
+}
+
+section strong{
+    color:var(--verde-oscuro);
+}
+
+section>p:last-child{
+    margin-top:25px;
+}
+
+section>p:last-child a{
+    display:inline-block;
+    padding:10px 15px;
+    background:var(--verde);
+    color:white;
+}
+
+section>p:last-child a:hover{
+    background:var(--verde-oscuro);
+}
+
+
+/* ================================
+   DESCRIPCIÓN
+================================ */
+
+#descripcion ul{
+    background:var(--turquesa-claro);
+    border-left:5px solid var(--turquesa);
+    padding:20px 25px 20px 45px;
+    margin-top:20px;
+}
+
+
+/* ================================
+   GALERÍA
+================================ */
+
+#galeria{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+#galeria h2,
+#galeria>p,
+#galeria>p:last-child{
+    grid-column:1/-1;
+}
+
+#galeria figure{
+    overflow:hidden;
+    background:var(--gris-claro);
+    border:1px solid #ddd;
+}
+
+#galeria figure img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.3s;
+}
+
+#galeria figure:hover img{
+    transform:scale(1.03);
+}
+
+#galeria figcaption{
+    padding:15px;
+    color:var(--gris);
+}
+
+
+/* ================================
+   TABLA
+================================ */
+
+#itinerario{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    min-width:760px;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+caption{
+    text-align:left;
+    font-weight:bold;
+    margin-bottom:15px;
+    color:var(--verde-oscuro);
+}
+
+th,
+td{
+    border:1px solid #d8d8d8;
+    padding:14px;
+    text-align:left;
+}
+
+thead{
+    background:var(--verde-oscuro);
+    color:white;
+}
+
+tbody tr:nth-child(even){
+    background:var(--verde-claro);
+}
+
+tbody tr:hover{
+    background:var(--turquesa-claro);
+}
+
+td[rowspan]{
+    font-weight:bold;
+    background:#cceee1;
+}
+
+
+/* ================================
+   ACTIVIDADES
+================================ */
+
+#actividades ul,
+#actividades ol,
+#recomendaciones ul{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px 30px;
+    margin-top:20px;
+}
+
+#actividades li,
+#recomendaciones li{
+    background:var(--gris-claro);
+    padding:10px;
+}
+
+
+/* ================================
+   ASIDE
+================================ */
+
+aside{
+    background:#fff8db;
+    border-left:6px solid #d8a000;
+    margin-top:30px;
+    padding:20px;
+}
+
+aside h3{
+    margin-top:0;
+    color:#9b6500;
+}
+
+
+/* ================================
+   CONTACTO
+================================ */
+
+#contacto dl{
+    display:grid;
+    grid-template-columns:210px 1fr;
+    gap:10px 20px;
+    background:var(--verde-claro);
+    padding:25px;
+    margin:25px 0;
+}
+
+#contacto dt{
+    color:var(--verde-oscuro);
+    font-weight:bold;
+}
+
+#contacto dd{
+    margin:0;
+}
+
+#contacto a[href^="tel"],
+#contacto a[href^="mailto"]{
+    font-weight:bold;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer{
+    background:var(--verde-oscuro);
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width:800px){
+
+    header{
+        min-height:auto;
+        padding:80px 6%;
+    }
+
+    header nav ul{
+        flex-direction:column;
+    }
+
+    header nav a{
+        width:100%;
+    }
+
+    main{
+        width:94%;
+    }
+
+    section{
+        padding:25px;
+    }
+
+    #galeria{
+        grid-template-columns:1fr;
+    }
+
+    #actividades ul,
+    #actividades ol,
+    #recomendaciones ul{
+        grid-template-columns:1fr;
+    }
+
+    #contacto dl{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:480px){
+
+    header h1{
+        font-size:2.3rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    #galeria figure img{
+        height:220px;
+    }
+
+}
