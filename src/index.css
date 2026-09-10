@@ -70,7 +70,7 @@ header {
             rgba(5, 45, 35, 0.70),
             rgba(5, 45, 35, 0.80)
         ),
-        url("./piscinas.jpg") center/cover no-repeat;
+        url("/piscinas.jpg") center/cover no-repeat;
 }
 
 header h1 {
@@ -266,13 +266,13 @@ section > p:last-child a:hover {
     margin: auto;
 }
 
-#tituloModal {
+.modal-contenido p {
     margin-top: 15px;
     font-size: 1.1rem;
     color: var(--texto);
 }
 
-#cerrarModal {
+.modal-contenido button {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -293,7 +293,7 @@ section > p:last-child a:hover {
     z-index: 10;
 }
 
-#cerrarModal:hover {
+.modal-contenido button:hover {
     background: var(--turquesa);
 }
 
@@ -396,23 +396,6 @@ tbody tr:hover {
 
 #cotizacion input[type="checkbox"] {
     margin-right: 8px;
-}
-
-#calcularTotal {
-    padding: 12px 22px;
-
-    background: var(--verde);
-    color: white;
-
-    border: none;
-
-    cursor: pointer;
-
-    font-size: 1rem;
-}
-
-#calcularTotal:hover {
-    background: var(--verde-oscuro);
 }
 
 #resultadoCotizacion {
@@ -656,7 +639,7 @@ footer p {
         padding: 15px;
     }
 
-    #cerrarModal {
+    .modal-contenido button {
         width: 38px;
         height: 38px;
     }
