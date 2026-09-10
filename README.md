@@ -5,6 +5,10 @@ aplicación modular construida con **React** y **Vite**. Cada funcionalidad
 interactiva se implementó como un componente independiente y reutilizable dentro
 de `src/components/`.
 
+## Sitio web publicado
+
+https://hojatrabajo4edi.netlify.app/
+
 ## Cómo ejecutar el proyecto
 
 ```bash
